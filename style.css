@@ -1,0 +1,129 @@
+* {
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("index.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.btns {
+  width: 400px;
+  height: 550px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 8px;
+  padding: 3px;
+  border: 10px 10px solid black;
+  background-color: yellow;
+  border-radius: 3px;
+  border-style: solid;
+}
+
+button {
+  background-color: red;
+  box-shadow: 5px 3px 4px red;
+  border: none;
+  margin: 2px;
+  border-radius: 5px;
+  font-size: x-large;
+  border-style: solid;
+}
+
+#equal {
+  background-color: rgb(26, 64, 230);
+  box-shadow: 5px 3px 4px rgb(26, 64, 230);
+}
+
+#number {
+  background-color: rgb(6, 247, 6);
+  box-shadow: 5px 3px 4px rgb(6, 247, 6);
+}
+
+#clear {
+  background-color: rgb(6, 247, 6);
+  box-shadow: 5px 3px 4px rgb(6, 247, 6);
+}
+
+input {
+  display: block;
+  width: 400px;
+  height: 40px;
+  border: none;
+  box-shadow: 3px 2px 4px black;
+  font-size: large;
+  padding: 3px;
+  border-style: solid;
+}
+
+.mother {
+  padding-top: 30px;
+}
+
+@media screen and (max-width: 530px) {
+  .btns {
+    width: 300px;
+    height: 450px;
+  }
+
+  input {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .btns {
+    width: 200px;
+    height: 350px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+  }
+
+  button {
+    font-size: large;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .btns {
+    width: 200px;
+    height: 250px;
+  }
+
+  input {
+    width: 200px;
+    height: 30px;
+  }
+
+  body {
+    background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .btns {
+    width: 150px;
+    height: 180px;
+  }
+
+  input {
+    width: 150px;
+    height: 25px;
+  }
+
+  button {
+    font-size: small;
+  }
+
+  body {
+    background-size: 100%;
+  }
+}
